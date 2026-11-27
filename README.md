@@ -30,7 +30,7 @@ The build generated all static and dynamic routes successfully. Key routes were 
 ## Vercel deployment
 1. Upload this folder to GitHub.
 2. Import the repository into Vercel.
-3. Add `RESEND_API_KEY`, `QUOTE_TO_EMAIL`, and `QUOTE_FROM_EMAIL`.
+3. Add `RESEND_API_KEY` and `QUOTE_FROM_EMAIL`.
 4. Attach `branogreen.com` and `www.branogreen.com`.
 5. Add the domain to Google Search Console and submit `/sitemap.xml`.
 

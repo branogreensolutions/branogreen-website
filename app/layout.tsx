@@ -14,5 +14,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <html lang="en"><body><JsonLd data={{'@context':'https://schema.org','@type':'Organization',name:'Brano Green Solutions Limited',url:'https://branogreen.com',email:'info@branogreen.com',telephone:'+2348036460532',address:{'@type':'PostalAddress',addressCountry:'NG',addressRegion:'Kano'}}}/><Header />{children}<Footer /></body></html>;
+  return <html lang="en"><body><JsonLd data={{'@context':'https://schema.org','@type':'Organization',name:'Brano Green Solutions Limited',url:'https://branogreen.com',email:'contact@branogreen.com',telephone:'+2348036460532',address:{'@type':'PostalAddress',addressCountry:'NG',addressRegion:'Kano'}}}/><Header />{children}<Footer /></body></html>;
 }

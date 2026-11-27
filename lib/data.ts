@@ -2,7 +2,7 @@ export const company = {
   name: 'Brano Green Solutions Limited',
   phone: '+234 803 646 0532',
   whatsapp: '2348036460532',
-  email: 'info@branogreen.com',
+  email: 'contact@branogreen.com',
   address: 'Kano State, Nigeria',
   tagline: 'Agriculture. Technology. Clean Energy.',
   description: 'A multidisciplinary Nigerian company operating through specialized divisions in agro commodity export, information technology and renewable energy.'

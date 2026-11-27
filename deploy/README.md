@@ -5,7 +5,7 @@ Templates target an Ubuntu/Debian VPS with systemd, Nginx, and Node.js 22 instal
 1. Create a dedicated `branogreen` system user and `/var/www/branogreen` owned by it.
 2. Clone this private repository into that directory using a read-only deploy key. Keep credentials out of Git.
 3. As the application user, run `npm ci` and `npm run build` in the checkout.
-4. Copy `.env.example` to `/etc/branogreen.env`, configure Resend and a verified sender, set owner `root:branogreen` and permissions `640`. The current quote handler requires Resend for actual email delivery; without it the original V3 handler redirects to thank-you but sends nothing. Do not launch the enquiry form without configuring and testing delivery.
+4. Copy `.env.example` to `/etc/branogreen.env`, configure Resend and a verified sender, set owner `root:branogreen` and permissions `640`. Enquiries are sent to contact@branogreen.com. The handler returns a visible error when delivery is unavailable. Configure RESEND_API_KEY and QUOTE_FROM_EMAIL and test delivery before launch.
 5. Install `branogreen.service` in `/etc/systemd/system/`; run `sudo systemctl daemon-reload` and `sudo systemctl enable --now branogreen`.
 6. Verify `curl -f http://127.0.0.1:3100/`. Inspect errors with `sudo journalctl -u branogreen -n 100`.
 7. Install `nginx.conf` as a separate enabled virtual host. Run `sudo nginx -t` before reloading Nginx. Test with `curl -H 'Host: branogreen.com' http://127.0.0.1/`.

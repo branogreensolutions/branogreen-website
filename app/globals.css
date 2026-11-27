@@ -13,3 +13,6 @@
  .grid{display:block!important}.grid>*{margin-bottom:1rem!important}.container{width:92%!important}.lg\:sticky{position:static!important}.min-h-\[740px\]{min-height:auto!important}
  header{position:static!important} a{text-decoration:none!important}
 }
+
+:focus-visible{outline:3px solid #047857;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
