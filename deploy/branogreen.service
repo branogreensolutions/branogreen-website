@@ -1,0 +1,20 @@
+[Unit]
+Description=Branogreen website
+After=network.target
+
+[Service]
+Type=simple
+User=branogreen
+Group=branogreen
+WorkingDirectory=/var/www/branogreen
+Environment=NODE_ENV=production
+EnvironmentFile=/etc/branogreen.env
+ExecStart=/usr/bin/node /var/www/branogreen/node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 3100
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target

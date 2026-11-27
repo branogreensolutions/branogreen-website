@@ -1,0 +1,1 @@
+export default {name:'galleryImage',title:'Gallery Image',type:'document',fields:[{name:'title',type:'string'},{name:'division',type:'string'},{name:'image',type:'image'},{name:'caption',type:'string'}]}

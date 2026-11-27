@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function Thanks(){return <main><section className="py-24"><div className="container max-w-3xl text-center"><span className="badge">Received</span><h1 className="mt-6 text-5xl font-black">Thank you for contacting Brano Green.</h1><p className="mt-6 text-xl text-slate-700">Your enquiry has been received. Our team will review the details and respond through the contact information you provided.</p><Link href="/" className="btn-primary mt-8">Return Home</Link></div></section></main>}

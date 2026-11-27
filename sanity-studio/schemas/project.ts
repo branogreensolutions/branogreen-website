@@ -1,0 +1,2 @@
+import { defineField, defineType } from 'sanity';
+export default defineType({name:'project',title:'Project / Case Study',type:'document',fields:[defineField({name:'title',type:'string'}),defineField({name:'division',type:'string'}),defineField({name:'slug',type:'slug',options:{source:'title'}}),defineField({name:'client',type:'string'}),defineField({name:'challenge',type:'text'}),defineField({name:'solution',type:'text'}),defineField({name:'results',type:'array',of:[{type:'string'}]}),defineField({name:'images',type:'array',of:[{type:'image',options:{hotspot:true}}]})]});

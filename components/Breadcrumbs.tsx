@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function Breadcrumbs({items}:{items:{name:string,href?:string}[]}){return <nav className="mb-8 text-sm font-semibold text-slate-500">{items.map((it,i)=><span key={it.name}>{i>0&&<span className="mx-2">/</span>}{it.href?<Link className="hover:text-emerald-700" href={it.href}>{it.name}</Link>:<span>{it.name}</span>}</span>)}</nav>}

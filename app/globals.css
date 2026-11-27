@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{--brand:#087f5b;--dark:#063b2f;--gold:#f2b705;--ink:#0f172a;--muted:#64748b;--soft:#ecfdf5}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:#f8fafc;color:var(--ink)}
+.container{width:min(1180px,92vw);margin-inline:auto}.bg-grid{background:radial-gradient(circle at top left,rgba(8,127,91,.16),transparent 35%),linear-gradient(135deg,#f8fafc 0%,#ecfdf5 45%,#fff7ed 100%)}
+.badge{display:inline-flex;align-items:center;border:1px solid rgba(8,127,91,.18);background:white;color:#047857;border-radius:999px;padding:.55rem .9rem;font-weight:800;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;box-shadow:0 10px 30px rgba(15,23,42,.06)}
+.btn-primary{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;background:#087f5b;color:white;font-weight:900;padding:.95rem 1.35rem;box-shadow:0 18px 40px rgba(8,127,91,.25);transition:.2s}.btn-primary:hover{transform:translateY(-2px);background:#066e50}.btn-secondary{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;background:white;color:#064e3b;font-weight:900;padding:.95rem 1.35rem;border:1px solid #d1fae5;transition:.2s}.btn-secondary:hover{transform:translateY(-2px);box-shadow:0 18px 40px rgba(15,23,42,.08)}
+.card{border:1px solid #e2e8f0;background:rgba(255,255,255,.9);border-radius:2rem;box-shadow:0 18px 60px rgba(15,23,42,.06)}.glass{background:rgba(255,255,255,.72);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.45)}
+.input{width:100%;border:1px solid #cbd5e1;border-radius:1rem;padding:.9rem 1rem;background:white;outline:none}.input:focus{border-color:#10b981;box-shadow:0 0 0 4px rgba(16,185,129,.12)}
+.prose-lite p{color:#475569;line-height:1.9}.prose-lite h2{font-size:2rem;font-weight:900;margin-top:2.5rem}.prose-lite h3{font-size:1.25rem;font-weight:900;margin-top:1.5rem}
+@media print{
+ .grid{display:block!important}.grid>*{margin-bottom:1rem!important}.container{width:92%!important}.lg\:sticky{position:static!important}.min-h-\[740px\]{min-height:auto!important}
+ header{position:static!important} a{text-decoration:none!important}
+}

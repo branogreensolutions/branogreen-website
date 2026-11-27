@@ -1,0 +1,1 @@
+export default {name:'downloadableDocument',title:'Downloadable Document',type:'document',fields:[{name:'title',type:'string'},{name:'division',type:'string'},{name:'description',type:'text'},{name:'file',type:'file'}]}

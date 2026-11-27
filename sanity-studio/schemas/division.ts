@@ -1,0 +1,2 @@
+import { defineField, defineType } from 'sanity';
+export default defineType({name:'division',title:'Division',type:'document',fields:[defineField({name:'title',type:'string',validation:r=>r.required()}),defineField({name:'slug',type:'slug',options:{source:'title'}}),defineField({name:'summary',type:'text'}),defineField({name:'heroImage',type:'image',options:{hotspot:true}}),defineField({name:'body',type:'array',of:[{type:'block'}]})]});
